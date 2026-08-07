@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    android:paddingBottom="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textColor="#E94560"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnCheckUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Check for Update"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:backgroundTint="#16213E"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnShareApp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Share App"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:backgroundTint="#E94560" />
+
+    </LinearLayout>
+</ScrollView>
