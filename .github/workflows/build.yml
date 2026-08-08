@@ -31,15 +31,6 @@ jobs:
       - name: Build APK
         run: gradle assembleRelease
 
-      - name: Sign APK
-        uses: r0adkll/sign-android-release@v1
-        with:
-          releaseDirectory: app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.KEYSTORE_BASE64 }}
-          alias: pixelsteg
-          keyStorePassword: ${{ secrets.KEYSTORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEYSTORE_PASSWORD }}
-
       - name: Rename APK
         run: |
           mv app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/PixelSteg.apk
