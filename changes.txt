@@ -1,0 +1,19 @@
+=== Pixel Steganography v1.0.0 ===
+- Created Android project for LSB steganography
+- StegoEngine class: LSB (Least Significant Bit) encoding/decoding in RGB channels
+- Custom header format: 4-byte magic "STEG", 2-byte filename length, up to 250-byte filename, 4-byte data length
+- AES-256-ECB encryption with optional password (SHA-256 key derivation)
+- Image picker and file picker via Android document APIs
+- Image preview with capacity estimation
+- Hide data: embeds file bytes into image pixels, outputs PNG
+- Extract data: reads header, extracts file bytes, decrypts if password provided
+- Save output to Downloads folder (stego image or extracted file)
+- AboutActivity with version display, Check for Update, Share App
+- ErrorHandler with error codes, timestamps, stack traces, Toast notifications
+- DebugLogger with timestamped log output
+- Dark theme with #1A1A2E background, #E94560 accent
+- Bottom padding (80dp) to prevent button cutoff
+- GitHub Actions workflow for automated APK build and release
+- Keystore generated and stored as GitHub secret
+- Repository: https://github.com/jnetai-clawbot/PixelSteg
+- Tag v1.0.0 pushed to trigger release build
