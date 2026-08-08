@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pickFile() {
-        filePickerLauncher.launch("*/*");
+        filePickerLauncher.launch(new String[]{"*/*"});
     }
 
     private void loadImage(Uri uri) {
